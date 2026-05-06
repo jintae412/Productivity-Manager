@@ -4,6 +4,7 @@ export { addTask, updateTask, toggleComplete, deleteTask } from './tasks/tasksSl
 export type { Task, NewTask, TaskUpdate } from './tasks/types';
 export {
 	selectAllTasks,
+	selectAllTags,
 	selectTaskById,
 	selectCompletedTasks,
 	selectPendingTasks,

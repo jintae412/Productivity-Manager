@@ -13,3 +13,13 @@ export const selectPendingTasks = (state: RootState) =>
 
 export const selectTasksDueOn = (date: string) => (state: RootState) =>
   	state.tasks.items.filter((t) => t.dueDate === date && !t.completed);
+
+export const selectAllTags = (state: RootState): string[] => {
+    const tagSet = new Set<string>();
+    for (const task of state.tasks.items) {
+        for (const tag of task.tags) {
+            tagSet.add(tag);
+        }
+    }
+    return Array.from(tagSet).sort();
+};
