@@ -1,5 +1,6 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import type { Task, NewTask, TaskUpdate } from './types';
+import { v4 as uuidv4 } from 'uuid';
 
 interface TasksState {
 	items: Task[];
@@ -16,7 +17,7 @@ const tasksSlice = createSlice({
 		addTask(state, action: PayloadAction<NewTask>) {
 			const newTask: Task = {
 				...action.payload,
-				id: crypto.randomUUID(),
+				id: uuidv4(),
 				completed: false,
 				createdAt: new Date().toISOString(),
 			};

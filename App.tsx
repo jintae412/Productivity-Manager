@@ -5,6 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { RootNavigator } from './src/navigation';
 import { Provider } from 'react-redux';
 import { store } from './src/features/store';
+import 'react-native-get-random-values';
 
 export default function App() {
     return (

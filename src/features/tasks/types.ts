@@ -1,7 +1,7 @@
 export interface Task {
     id: string;
     title: string;
-    notes: string;
+    notes: string | null;
     dueDate: string | null;
     completed: boolean;
     createdAt: string;

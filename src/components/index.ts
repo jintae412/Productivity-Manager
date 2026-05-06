@@ -1,3 +1,4 @@
+export { CreateTaskModal } from './CreateTaskModal';
 export { ScreenContainer } from './ScreenContainer';
 export { SectionHeader } from './SectionHeader';
 export { TaskItem } from './TaskItem';
