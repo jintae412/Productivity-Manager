@@ -1,4 +1,4 @@
-// Full-screen views rendered by the navigator (e.g. HomeScreen, TaskDetailScreen)
 export { TodayScreen } from './TodayScreen';
 export { TasksScreen } from './TasksScreen';
+export { TaskFormScreen } from './TaskFormScreen';
 export { HabitsScreen } from './HabitsScreen';
